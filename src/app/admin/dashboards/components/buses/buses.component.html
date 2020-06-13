@@ -1,0 +1,73 @@
+<div class="block-header">
+    <div class="row">
+        <div class="col-lg-7 col-md-6 col-sm-12">
+            <h2>All Buses</h2><br>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a [routerLink]="['/dashboard']"><i class="zmdi zmdi-home"></i> Trackers</a></li>
+                <li class="breadcrumb-item active">View all buses</li>
+            </ul>
+            <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <button class="btn btn-primary btn-icon float-right right_icon_toggle_btn" type="button" (click)="toggleRightBar()"><i class="zmdi zmdi-arrow-right"></i></button>
+        </div>
+        <!-- <h5>Buses view All</h5> -->
+    </div>
+<br>
+    <div class="container-fluid">
+            <div class="row clearfix">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="table-responsive">
+                        <table class="table table-hover c_table theme-color">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Bus Number</th>
+                                    <th>Bus Route</th>
+                                    <th>Owner Mail</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let bus of all_buses; let typeIndex=index;">
+                                  <td>{{typeIndex+1}}</td>
+                                  <td><strong><a>{{bus.bus_no}}</a></strong></td>
+                                  <td>
+                                    <strong>{{bus.route}}</strong>
+                                  </td>
+                                  <td><span class="col-green">{{bus.owner_mail}}</span></td>
+                                  <td>
+                                    <button class="btn btn-default btn-sm" routerLink = "/dashboard/buses/location"><i class="zmdi zmdi-pin"></i></button>
+                                    <button class="btn btn-default btn-sm" (click)="onSelect(bus.bus_no)" ><i class="zmdi zmdi-edit"></i></button>
+                                    <button class="btn btn-default btn-sm"><i class="zmdi zmdi-delete"></i></button>
+                                
+                                  </td>
+                                </tr>
+
+                                <!-- <tr>
+                                    <td>02</td>
+                                    <td><strong><a href="javascript:void(0);">NA-8923</a></strong></td>
+                                    <td>Colombo - Anuradhapura </td>
+                                    <td><a href="javascript:void(0);">15</a></td>
+                                    <td>
+                                        <button class="btn btn-default btn-sm"><i class="zmdi zmdi-eye"></i></button>
+                                        <button class="btn btn-default btn-sm"><i class="zmdi zmdi-pin"></i></button>
+                                        <button class="btn btn-default btn-sm"><i class="zmdi zmdi-edit"></i></button>
+                                        <button class="btn btn-default btn-sm"><i class="zmdi zmdi-delete"></i></button>
+                                    </td>
+                                </tr> -->
+
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!-- //////// -->
+
+
+  <!-- ///////////// -->
+
+</div>

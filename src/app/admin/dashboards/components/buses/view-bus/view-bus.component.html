@@ -1,0 +1,63 @@
+
+    <div class="body_scroll">
+        <div class="block-header">
+            <div class="row">
+                <div class="col-lg-7 col-md-6 col-sm-12">
+                    <h2>View Bus</h2>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="zmdi zmdi-home"></i>Trackers</a></li>
+                        <li class="breadcrumb-item">Pages</li>
+                        <li class="breadcrumb-item">Pages</li>
+                        <li class="breadcrumb-item active">Bus</li>
+                    </ul>
+                    <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12">                
+                    <button class="btn btn-primary btn-icon float-right right_icon_toggle_btn" type="button"><i class="zmdi zmdi-arrow-right"></i></button>
+                    <a href="profile-edit.html" class="btn btn-info btn-icon float-right"><i class="zmdi zmdi-edit"></i></a>
+                </div>
+            </div>
+        </div> 
+        <div class="container-fluid">
+            <div class="row clearfix">
+                <div class="col-lg-4 col-md-12">
+                    <div class="card mcard_3">
+                        <div class="body">
+                            <a href="profile.html"><img src="assets/images/profile_av.jpg" class="rounded-circle shadow " alt="profile-image"></a>
+                            <h4 class="m-t-10">{{bus_details.bus_no}}</h4>                         
+                        </div>
+                    </div>
+                    <div class="card">
+                        
+                    </div>                    
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="card">
+                        <div class="body">
+                            <small class="text-muted">Bus Number: </small>
+                            <p>{{bus_details.bus_no}}</p>
+                            <hr>
+                            <small class="text-muted">Owner Mail: </small>
+                            <p>{{bus_details.owner_mail}}</p>
+                            <hr>
+                            <small class="text-muted">Bus Route: </small>
+                            <p>{{bus_details.route}}</p>
+                            <hr>
+                            <small class="text-muted">Route Number: </small>
+                            <p>{{bus_details.route_no}}</p>
+                            <hr>
+                            <small class="text-muted">Bus Type: </small>
+                            <p>{{bus_details.bus_type}}</p>
+                            <hr>
+                            <!-- <small class="text-muted">Main Cities: </small>
+                            <p>Anuradhapura</p>
+                            <p>Mihinthale</p>
+                            <p>Horowpothana</p> -->
+                            <!-- <hr> -->
+  
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

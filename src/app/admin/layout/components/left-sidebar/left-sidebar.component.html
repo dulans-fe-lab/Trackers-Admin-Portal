@@ -1,0 +1,51 @@
+<aside id="leftsidebar" class="sidebar">
+    <div class="navbar-brand">
+        <button class="btn-menu ls-toggle-btn" type="button" (click)="toggleSmallMenu()"><i class="zmdi zmdi-menu"></i></button>
+        <a routerLink="/dashboard"><img src="assets/images/logo.svg" width="25" alt="Aero"><span class="m-l-10">Trackers</span></a>
+    </div>
+    <div class="menu">
+        <ul class="list">
+            <li>
+                <div class="user-info">
+                    <a class="image waves-effect waves-block" href="profile.html"><img src="assets/images/Admin.png" alt="User"></a>
+                    <div class="detail">
+                        <h4>Gun Skoop</h4>
+                        <small>Super Admin</small>                        
+                    </div>
+                </div>
+            </li>
+
+            <li class="active open"><a routerLink="/" class="toggled waves-effect waves-block"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
+            <li><a href="my-profile.html" class=" waves-effect waves-block"><i class="zmdi zmdi-account"></i><span>Profile</span></a></li>
+
+            <li><a href="javascript:void(0);" class="menu-toggle waves-effect waves-block" [ngClass]="{'toggled':activeMenu == 'buses'}" (click)="openItem('buses')"><i class="zmdi zmdi-bus"></i><span>Buses</span></a>
+                <ul class="ml-menu" [ngClass]="{'d-block':activeMenu == 'buses'}">
+                    <li><a routerLink = "/dashboard/buses" class=" waves-effect waves-block">View All</a></li>
+                    <li><a routerLink="/dashboard/addbus" class=" waves-effect waves-block">Add Bus</a></li>
+                    
+                </ul>
+            </li>
+            <li> <a href="javascript:void(0);" class="menu-toggle waves-effect waves-block" [ngClass]="{'toggled':activeMenu == 'bus-owners'}" (click)="openItem('bus-owners')"><i class="zmdi zmdi-account"></i><span>Bus Owners</span></a>
+                <ul class="ml-menu" [ngClass]="{'d-block':activeMenu == 'bus-owners'}">
+                    <li><a routerLink="/dashboard/busowner" class=" waves-effect waves-block">View All</a></li>
+                    <li><a routerLink="/dashboard/addbusowner" class=" waves-effect waves-block">Add Owner</a></li>
+                    
+                </ul>
+            </li>
+            <li> <a href="javascript:void(0);" class="menu-toggle waves-effect waves-block" [ngClass]="{'toggled':activeMenu == 'bus-drivers'}" (click)="openItem('bus-drivers')"><i class="zmdi zmdi-seat"></i><span>Bus Drivers</span></a>
+                <ul class="ml-menu" [ngClass]="{'d-block':activeMenu == 'bus-drivers'}">
+                    <li><a routerLink = "/dashboard/busdriver" class=" waves-effect waves-block">View All</a></li>
+                    <!-- <li><a href="#" class=" waves-effect waves-block">Add Driver</a></li> -->                   
+                </ul>
+            </li>
+
+            <li> <a href="javascript:void(0);" class="menu-toggle waves-effect waves-block" [ngClass]="{'toggled':activeMenu == 'passengers'}" (click)="openItem('passengers')"><i class="zmdi zmdi-airline-seat-recline-extra"></i><span>Passengers</span></a>
+                <ul class="ml-menu" [ngClass]="{'d-block':activeMenu == 'passengers'}">
+                    <li><a routerLink = "/dashboard/passenger" class=" waves-effect waves-block">View All</a></li>
+                    <!-- <li><a href="#" class=" waves-effect waves-block">Add Driver</a></li> -->                   
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</aside>

@@ -1,0 +1,84 @@
+
+    <div class="body_scroll">
+        <div class="block-header">
+            <div class="row">
+                <div class="col-lg-7 col-md-6 col-sm-12">
+                    <h2>Bus Owner</h2>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="zmdi zmdi-home"></i>Trackers</a></li>
+                        <li class="breadcrumb-item">Pages</li>
+                        <li class="breadcrumb-item">Pages</li>
+                        <li class="breadcrumb-item active">Bus owner</li>
+                    </ul>
+                    <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12">                
+                    <button class="btn btn-primary btn-icon float-right right_icon_toggle_btn" type="button"><i class="zmdi zmdi-arrow-right"></i></button>
+                    <a href="profile-edit.html" class="btn btn-info btn-icon float-right"><i class="zmdi zmdi-edit"></i></a>
+                </div>
+            </div>
+        </div> 
+        <div class="container-fluid">
+            <div class="row clearfix">
+                <div class="col-lg-4 col-md-12">
+                    <div class="card mcard_3">
+                        <div class="body">
+                            <a href="profile.html"><img src="assets/images/profile_av.jpg" class="rounded-circle shadow " alt="profile-image"></a>
+                            <h4 class="m-t-10">{{owner_details.first_name + " " + owner_details.last_name}}</h4>                         
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="body">
+                            <small class="text-muted">First Name: </small>
+                            <p>{{owner_details.first_name}}</p>
+                            <hr>
+                            <small class="text-muted">Last Name: </small>
+                            <p>{{owner_details.last_name}}</p>
+                            <hr>
+                            <small class="text-muted">Email address: </small>
+                            <p>{{owner_details.owner_mail}}</p>
+                            <hr>
+                            <small class="text-muted">Address: </small>
+                            <p>{{owner_details.address}}</p>
+                            <hr>
+                            <small class="text-muted">Phone: </small>
+                            <p>{{owner_details.contact_no}}</p>
+                            <hr>
+                            <small class="text-muted">Date of Birth: </small>
+                            <p>{{owner_details.date_of_birth}}</p>
+                            <hr>
+  
+                          </div>
+                    </div>                    
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2><strong>Buses</strong></h2>
+                        </div>
+                        <div class="body">
+                            <div class="table-responsive">
+                                <table class="table table-hover theme-color c_table">
+                                    <thead>
+                                        <tr>
+                                            <th>Bus Number</th>
+                                            <th>Route</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="w70">NB-1020</td>
+                                            <td><a class="text-muted"> Horowpothana - Anuradhapura</a></td>
+                                            
+                                        </tr>
+                                     
+                                    </tbody>
+                                </table>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
