@@ -10,7 +10,7 @@ export class PassengerManagementService {
   constructor(private http: HttpClient) { }
 
   get_all_passengers(): Observable<any> {
-    return this.http.get('http://localhost:3000/api/v1.0.0/getallpassengers');
+    return this.http.get('https://trackers-pro.herokuapp.com/api/v1.0.0/getallpassengers');
   }
 
 

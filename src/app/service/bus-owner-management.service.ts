@@ -13,18 +13,18 @@ export class BusOwnerManagementService {
   constructor(private http: HttpClient) { }
 
   get_all_bus_owners(): Observable<any> {
-    return this.http.get('http://localhost:3000/api/v1.0.0/getallowners');/*all bus-owners la view krana ekata*/
+    return this.http.get('https://trackers-pro.herokuapp.com/api/v1.0.0/getallowners');/*all bus-owners la view krana ekata*/
   }
 
   // Add buss owner ekata post reqest eka yawana eka 
   // https://www.youtube.com/watch?v=lmteIO2FQYA&list=PLC3y8-rFHvwhwL-XH04cHOpJnkgRKykFi&index=12 
   enroll(user: User){
-    return this.http.post<any>('http://localhost:3000/api/v1.0.0/registerowner',user);
+    return this.http.post<any>('https://trackers-pro.herokuapp.com/api/v1.0.0/registerowner',user);
   }
 
   
   getBusOwnerDetails(owner_mail: any): Observable<any> {
-    return this.http.get('http://localhost:3000/api/v1.0.0/getowner/' + owner_mail);
+    return this.http.get('https://trackers-pro.herokuapp.com/api/v1.0.0/getowner/' + owner_mail);
   }
 
 }

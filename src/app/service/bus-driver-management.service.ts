@@ -10,6 +10,6 @@ export class BusDriverManagementService {
   constructor(private http: HttpClient) {}
 
   get_all_bus_drivers(): Observable<any> {
-    return this.http.get('http://localhost:3000/api/v1.0.0/getalldrivers');/*all bus-drivers la view krana ekata*/
+    return this.http.get('https://trackers-pro.herokuapp.com/api/v1.0.0/getalldrivers');/*all bus-drivers la view krana ekata*/
   }
 }
